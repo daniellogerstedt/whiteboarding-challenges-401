@@ -4,7 +4,8 @@
   "description": "whiteboarding challenge 02",
   "main": "solution.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "jest",

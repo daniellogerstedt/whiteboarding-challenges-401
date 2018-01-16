@@ -17,8 +17,8 @@ describe('Solution to whiteboarding 02', function(){
       expect(solution.highest([])).toBe(null);
     });
     it('verifies the returned values are the highest in the array passed as an argument', function(){
-      expect(solution.highest([3, 17])).toBe({max: 17, maxTwo: 3});
-      expect(solution.highest([1, 3, 4, 2, 5, 7, 8, 6, 9])).toBe({max: 9, maxTwo: 8});
+      expect(solution.highest([3, 17])).toEqual({max: 17, maxTwo: 3});
+      expect(solution.highest([1, 3, 4, 2, 5, 7, 8, 6, 9])).toEqual({max: 9, maxTwo: 8});
     });
   });
 });
