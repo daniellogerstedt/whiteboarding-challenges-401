@@ -9,6 +9,7 @@ describe('Solution to whiteboarding 02', function(){
       expect(solution.highest({})).toBe(null);
       expect(solution.highest('somestring')).toBe(null);
       expect(solution.highest()).toBe(null);
+      expect(solution.highest(null)).toBe(null);
       expect(solution.highest(3)).toBe(null);
       expect(solution.highest([1, 'dog', 3, 5])).toBe(null);
     });
