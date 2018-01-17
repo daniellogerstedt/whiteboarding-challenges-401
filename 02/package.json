@@ -1,0 +1,19 @@
+{
+  "name": "02",
+  "version": "1.0.0",
+  "description": "whiteboarding challenge 02",
+  "main": "solution.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "jest",
+    "whiteboarding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.1.1"
+  }
+}
