@@ -1,0 +1,25 @@
+{
+  "name": "whiteboarding-challenges-401",
+  "version": "1.0.0",
+  "description": "whiteboarding challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniellogerstedt/whiteboarding-challenges-401.git"
+  },
+  "keywords": [
+    "whiteboarding-challenges"
+  ],
+  "author": "daniellogerstedt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniellogerstedt/whiteboarding-challenges-401/issues"
+  },
+  "homepage": "https://github.com/daniellogerstedt/whiteboarding-challenges-401#readme",
+  "devDependencies": {
+    "jest": "^22.1.3"
+  }
+}
