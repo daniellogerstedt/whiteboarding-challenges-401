@@ -4,28 +4,11 @@
   "description": "whiteboarding challenges",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daniellogerstedt/whiteboarding-challenges-401.git"
-  },
-  "jest": {
-    "verbose": true,
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coverageDirectory": "./coverage",
-    "coveragePathIgnorePatterns": [
-      "/assets/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80
-      }
-    }
   },
   "keywords": [
     "whiteboarding-challenges"
