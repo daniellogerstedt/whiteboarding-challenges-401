@@ -5,14 +5,14 @@ const Queue = require('./queue');
 const TreeNode = class {
   constructor(val) {
     this.val = val;
-    this.children = [];
+    this.children = []; // Big O: O(1)
   }
 
 };
 
 module.exports = class { // K-Ary Tree Constructor
   constructor() {
-    this.root = null;
+    this.root = null; // Big O: O(1)
   }
 
   breadthFirst(callback) {
@@ -23,7 +23,7 @@ module.exports = class { // K-Ary Tree Constructor
       current = q.dequeue();
 
       callback(current.val);
-      current.val.children.map(c => q.enqueue(c));
+      current.val.children.map(c => q.enqueue(c)); // Big O: O(N^2)
     }
   }
 
@@ -37,7 +37,7 @@ module.exports = class { // K-Ary Tree Constructor
 
     this.breadthFirst(node => {
       if (parent === node.val) {
-        node.children.push(tn);
+        node.children.push(tn); // Big O: O(N^2)
         return;
       }
     });
@@ -50,7 +50,7 @@ module.exports = class { // K-Ary Tree Constructor
     }
     this.breadthFirst(node => {
       node.children.map((c, i) => {
-        if (c.val === val) node.children.splice(i, 1);
+        if (c.val === val) node.children.splice(i, 1); // Big O: O(N^2)
       });
       return;
     });

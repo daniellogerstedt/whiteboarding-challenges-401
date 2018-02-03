@@ -8,8 +8,7 @@ module.exports = (tree) => {
   if (!tree.root) return new Error('Empty Tree Provided, Requires Tree Containing Data');
   let arr = [];
   tree.breadthFirst(v => {
-    console.log(v);
-    if(v.children.length === 0) arr.push(v);
+    if (v.children.length === 0) arr.push(v); // Big O: O(N^2)
   });
   return arr;
 };
