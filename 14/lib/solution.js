@@ -12,11 +12,11 @@ module.exports = (sll) => {
   stack.push(copy.findNthNode(1).val);
   copy.remove(1);
   for (let lts = copy.head; lts; lts = lts.next) {
-    if (lts.val === stack.top.val) stack.push(copy.findNthNode(1).val);
+    if (lts.val !== stack.top.val) stack.push(copy.findNthNode(1).val);
     copy.remove(1);
   }
   for (let stl = stack.top; stl; stl = stack.top) {
-    copy.insertHead(stack.pop().val);
+    copy.insertHead(stack.pop().val);    
   }
   return copy;
 };
