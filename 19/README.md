@@ -25,4 +25,4 @@
 
 ### Whiteboard Solution
 
-  * The solution takes in a K-Ary Tree and iterates through it finding the node with the most children and storing a reference to it in a variable, it then returns the node after it has finished searching the tree.
+  * The solution takes in a K-Ary Tree and iterates through it pushing each value to an array, it then sorts the array before creating a linked list from the values. it then returns the list.
