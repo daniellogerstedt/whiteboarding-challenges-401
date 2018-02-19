@@ -12,7 +12,7 @@ module.exports = {
     if (!arr || !Array.isArray(arr)) return null;
     if (!cb || typeof cb !== 'function') return new Array(...arr);
     let final = [], copy = new Array(...arr);
-    for (let i in copy) if (cb(copy[i])) final.push(copy[i]);
+    for (let i in copy) if (cb(copy[i], i, copy)) final.push(copy[i]);
     return final;
   },
   reduce: (arr, cb, acc) => {
@@ -21,7 +21,7 @@ module.exports = {
     if (typeof cb !== 'function') return null;
     if (!acc) acc = 0;
     let copy = new Array(...arr);
-    for (let i in copy) acc = cb(acc, copy[i]);
+    for (let i in copy) acc = cb(acc, copy[i], i, copy);
     return acc;
   },
 };
