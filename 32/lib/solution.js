@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = n => {
-  if (typeof n !== 'number') return null;
+  if (!n || typeof n !== 'number') return null;
   let cache = [0, 1];
   switch(n) {
   case(0): return 0;

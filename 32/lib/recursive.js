@@ -1,7 +1,7 @@
 'use strict';
 
 let fibR = module.exports = (n) => {
-  if (typeof n !== 'number') return null;
+  if (!n || typeof n !== 'number') return null;
   switch (n) {
   case (0): return 0;
   case (1): return 1;
